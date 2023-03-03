@@ -1,6 +1,6 @@
-const Card = ({heading, content, src}) => {
+const Card = ({heading, content, src, id}) => {
   return (
-    <div className="card">
+    <div className="card" id={id}>
         <div className="card-img">
             <img src={src} alt="" />
         </div>

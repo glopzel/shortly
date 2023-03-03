@@ -4,9 +4,8 @@ const Hero = () => {
   return (
     <div className="hero__container">
       <Header />
-      <div className="hero">
+      <div className="hero container">
         <section>
-          <div className="container"></div>
           <h1 className="text-align">More than just shoter links</h1>
           <p className="text-align hero-p">
             Build your brand's recognition and get detailed insights on how your
@@ -19,7 +18,6 @@ const Hero = () => {
           </div>
         </section>
         <div className="hero__img">
-          {/* <img src="" alt="" /> */}
         </div>
       </div>
     </div>

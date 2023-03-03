@@ -20,7 +20,7 @@ const CTA = () => {
       <div className="container cards">
         {headings.map((item, index) => {
           return (
-            <Card heading={item} content={content[index]} src={imgs[index]} key={index}/>
+            <Card heading={item} content={content[index]} src={imgs[index]} id={`card-${index}`} key={index}/>
           )
         })}
       </div>
