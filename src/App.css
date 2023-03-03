@@ -185,7 +185,7 @@ h5 {
   background-image: url('./assets/images/bg-boost-mobile.svg');
   background-repeat: no-repeat;
   background-position: right;
-  padding: 3.5em;
+  padding: 3.5em 0;
 }
 
 .btn, .input-submit  {
@@ -343,7 +343,7 @@ footer .container {
 
 .social-media {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 @media (min-width: 50em) {
