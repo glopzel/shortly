@@ -3,7 +3,7 @@
   --dark-purple: rgba(75, 63, 107, 1);
   --gray: rgba(158, 154, 168, 1);
   --light-gray:#eff1f7;
-  --cyan: rgba(43, 208, 208, 1);
+  --cyan: #2bd0d0;
 }
 
 a {
@@ -126,7 +126,7 @@ h5 {
   padding-top: 3em;
 }
 
-.small-container p {
+.small-container p, .card-text p {
   margin-top: 1em;
   color: rgba(158, 154, 168, 1);
 }
@@ -231,7 +231,7 @@ h5 {
   height: 64px;
 }
 
-.cyan-btn:hover, .input-submit:hover, #sign-up-btn:hover {
+.cyan-btn:hover, .input-submit:hover, #sign-up-btn:hover, .copy-btn:hover {
   background: hsl(180, 57%, 75%);
 }
 

@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import Link from './Links'
 import Link from './LinkResult'
 
 const LinkInput = () => {
@@ -26,8 +25,10 @@ const LinkInput = () => {
             })
 
             const data = await res.json()
-            // console.log(data.data.shortUrl)
-            setShortUrl(data.data.shortUrl)
+
+            const shortenedUrl = data.data.shortUrl
+           
+            setShortUrl(shortenedUrl)
         } catch(err) {
             console.log(err)
         }
