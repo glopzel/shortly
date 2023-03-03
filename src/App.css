@@ -58,6 +58,7 @@ h5 {
   letter-spacing: 0.12px;
   line-height: 32px;
   margin: 1em 0;
+  color: rgb(158, 154, 168);
 }
 
 .sub-heading {
@@ -378,7 +379,6 @@ footer .container {
   .hero-p {
     letter-spacing: 0.15px;
     line-height: 36px;
-    color: rgb(158, 154, 168);
   }
 
   .input-submit {
