@@ -1,4 +1,8 @@
 import Logo from './Logo'
+import twitter from '../assets/images/icon-twitter.svg'
+import facebook from '../assets/images/icon-facebook.svg'
+import pinterest from '../assets/images/icon-pinterest.svg'
+import instagram from '../assets/images/icon-instagram.svg'
 
 const Footer = ({fill}) => {
   return (
@@ -7,13 +11,13 @@ const Footer = ({fill}) => {
             <div className="footer-logo">
                 <Logo fill={fill} />
             </div>
-            <div>
+            <div className='second-nav-container'>
                 <section className="secondary-nav">
                     <h5>Features</h5>
                     <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="">Link Shortening</a></li>
+                        <li><a href="">Branded Links</a></li>
+                        <li><a href="">Analytics</a></li>
                     </ul>
                 </section>
                 <section className="secondary-nav">
@@ -33,6 +37,12 @@ const Footer = ({fill}) => {
                         <li><a href="">Contact</a></li>
                     </ul>
                 </section>
+            </div>
+            <div className="social-media">
+                <img src={facebook} alt="" />
+                <img src={twitter} alt="" />
+                <img src={pinterest} alt="" />
+                <img src={instagram} alt="" />
             </div>
         </div>
     </footer>
