@@ -226,6 +226,7 @@ h5 {
 .url-input {
   border-radius: 10px;
   padding: 0 1em;
+  border: 2px solid transparent;
 }
 
 .url-input, .input-submit {

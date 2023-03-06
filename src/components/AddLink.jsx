@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from './LinkResult'
 
 const LinkInput = () => {
     const [link, setLink] = useState('')
+    const [original, setOriginal] = useState('')
     const [shortUrl, setShortUrl] = useState('')
 
     const onSubmit = async (e) => {
@@ -13,6 +14,8 @@ const LinkInput = () => {
             return
         }
 
+        setOriginal(link)
+
         try {
             let res = await fetch('https://api.urlo.in/api/short-url', {
                 method: 'POST',
@@ -20,7 +23,7 @@ const LinkInput = () => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    originalUrl: link,
+                    originalUrl: original,
                 })
             })
 
@@ -29,6 +32,7 @@ const LinkInput = () => {
             const shortenedUrl = data.data.shortUrl
            
             setShortUrl(shortenedUrl)
+
         } catch(err) {
             console.log(err)
         }
@@ -46,7 +50,7 @@ const LinkInput = () => {
         </div>
         {
             shortUrl && (
-                <Link original={link} short={shortUrl} />
+                <Link original={original} short={shortUrl} />
             )
         }
     </>
