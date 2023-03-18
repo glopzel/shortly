@@ -394,10 +394,6 @@ footer .container {
   .cards {
     min-height: 50vh;
     padding-bottom: 3em;
-    background-image: url('./assets/images/line.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   #card-1 {
@@ -576,5 +572,14 @@ footer .container {
 
   .mobile-nav-toggle {
     z-index: 9999;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    background-image: url('./assets/images/line.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
