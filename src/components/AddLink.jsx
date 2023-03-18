@@ -17,19 +17,11 @@ const LinkInput = () => {
         setOriginal(link)
 
         try {
-            let res = await fetch('https://api.urlo.in/api/short-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    originalUrl: original,
-                })
-            })
+            let res = await fetch(`https://api.shrtco.de/v2/shorten?url=${original}`)
 
             const data = await res.json()
 
-            const shortenedUrl = data.data.shortUrl
+            const shortenedUrl = data.result.full_short_link
            
             setShortUrl(shortenedUrl)
 

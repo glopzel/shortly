@@ -15,8 +15,7 @@ live site: [link to render](https://shortly-tafm.onrender.com)
 - CSS Grid
 - Mobile-first workflow
 - React
-- URLO open source API
+- [SHRTCODE Open Source API](https://shrtco.de/) 
 
 ## Continued development
-- change api, the links are shortened but
 - lift state
