@@ -246,8 +246,6 @@ h5 {
 .hero {
   display: flex;
   flex-direction: column-reverse;
-  --max-width: 100%;
-  --padding: 2rem;
 }
 
 .hero > * {
